@@ -1,0 +1,12 @@
+node_modules/
+.build/
+test-results/
+playwright-report/
+dist/screenshots/
+
+# SAT verification cache — redistribution not permitted (SPEC §4.1)
+tools/raw-private/
+
+# Local tooling
+.claude/
+.DS_Store

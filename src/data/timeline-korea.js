@@ -1,0 +1,23 @@
+// Timeline — Korean Sŏn (Phase 6, TASKS P6-02). Western years; approx:true where uncertain. Does not repeat tl-doui,
+// tl-jinul, tl-taego, tl-seosan, tl-gyeongheo, tl-jogye (timeline.js). Sources: see the profiles referenced by each event.
+ZEN_DATA.timeline.push(
+  { id: 'tl-kr-silsangsa', year: 828, approx: true, region: 'korea', th: 'ฮงชอก (洪陟) ศิษย์ซีถัง จื้อจั้ง ตั้งวัดชิลซังซา ต้นสำนักภูเขาชิลซัง ซึ่งมักนับเป็นสำนักแรกที่ตั้งมั่นในบรรดาภูเขาทั้งเก้า', ref: 'school:kusan' },
+  { id: 'tl-kr-muyeom', year: 845, region: 'korea', th: 'มูยอมกลับจากจีนในปีที่ราชสำนักถังกวาดล้างพุทธศาสนา แล้วตั้งสำนักภูเขาซองจู', ref: 'person:muyeom' },
+  { id: 'tl-kr-beomil', year: 847, approx: true, region: 'korea', th: 'พอมิล ศิษย์เหยียนกวน ฉีอาน กลับชิลลา ต่อมาตั้งสำนักภูเขาซากุลที่คังนึง', ref: 'person:beomil' },
+  { id: 'tl-kr-suseonsa', year: 1205, region: 'korea', th: 'พระเจ้าฮีจงพระราชทานชื่อซูซอนซาแก่สมาคมของชินุลที่ภูเขาโชเก — วัดซงกวังซาในปัจจุบัน', ref: 'person:jinul' },
+  { id: 'tl-kr-yeomsong', year: 1226, region: 'korea', th: 'ฮเยซิมรวบรวม 禪門拈頌集 ประมวลโกอานฉบับเกาหลีเสร็จ', ref: 'person:hyesim' },
+  { id: 'tl-kr-naong', year: 1358, region: 'korea', th: 'นาอง ฮเยกึนกลับจากราชสำนักหยวน หลังได้รับการรับรองจากผิงซาน ชู่หลินและพระอินเดียจื่อคง', ref: 'person:naong' },
+  { id: 'tl-kr-joseon', year: 1392, region: 'korea', th: 'อี ซองกเยสถาปนาราชวงศ์โชซอน แต่งตั้งมูฮัก ชาโชเป็นราชครู — ราชวงศ์ใหม่ยึดลัทธิขงจื่อใหม่เป็นอุดมการณ์รัฐ', ref: 'person:muhak' },
+  { id: 'tl-kr-two-schools', year: 1424, region: 'korea', th: 'พระเจ้าเซจงบังคับรวมสำนักพุทธเหลือสองสำนัก คือสำนักซอนกับสำนักคัมภีร์ และจำกัดวัดที่รัฐรับรอง', ref: 'person:hamheo' },
+  { id: 'tl-kr-munjeong', year: 1550, yearEnd: 1565, region: 'korea', th: 'พระราชินีมุนจองผู้สำเร็จราชการฟื้นสองสำนักและการสอบพระชั่วคราว ซอซันสอบผ่านในปี 1552', ref: 'person:seosan' },
+  { id: 'tl-kr-samyeong', year: 1604, yearEnd: 1605, region: 'korea', th: 'ซามยองเป็นทูตไปญี่ปุ่น พบโทกูงาวะ อิเอยาซุที่ฟูชิมิ และนำเชลยสงครามอิมจินกลับบ้าน', ref: 'person:samyeong' },
+  { id: 'tl-kr-ordinance', year: 1911, region: 'korea', th: 'รัฐบาลอาณานิคมญี่ปุ่นออกกฎหมายวัด (寺刹令) ควบคุมวัดเกาหลีผ่านเจ้าอาวาสวัดใหญ่ 30 แห่ง (ต่อมา 31) ต่อมาพระที่มีครอบครัวแพร่หลาย', ref: 'person:mangong' },
+  { id: 'tl-kr-bongamsa', year: 1947, region: 'korea', th: 'ซองชอล ชองดัม และเพื่อนพระตั้งสมาคมฝึกที่วัดพงอัมซา ปณิธาน "อยู่ตามธรรมของพระพุทธเจ้า" — ต้นแบบของการปฏิรูปสงฆ์หลังอาณานิคม', ref: 'person:seongcheol' },
+  { id: 'tl-kr-sangwonsa', year: 1951, region: 'korea', th: 'ฮันอัมไม่ยอมออกจากวัดซังวอนซาเมื่อทหารมาเผาวัดในภูเขาโอแดระหว่างสงครามเกาหลี วัดจึงรอด ท่านมรณภาพในปีเดียวกัน', ref: 'person:hanam' },
+  { id: 'tl-kr-purification', year: 1954, yearEnd: 1962, region: 'korea', th: 'ขบวนการ "ชำระ" สงฆ์: พระถือพรหมจรรย์ต่อสู้เพื่อควบคุมวัดจากพระที่มีครอบครัว จนนำไปสู่การตั้งคณะโชเกในปี 1962', ref: 'school:jogye' },
+  { id: 'tl-kr-songgwangsa', year: 1969, region: 'korea', th: 'ซงกวังซาได้รับการยกฐานะเป็นโชเกชงนิม มีคูซาน ซูรยอนเป็นเจ้าอาวาสใหญ่คนแรก', ref: 'person:kusan-suryeon' },
+  { id: 'tl-kr-taego-order', year: 1970, region: 'korea', th: 'พระที่มีครอบครัวจดทะเบียนตั้งคณะแทโกแยกจากคณะโชเก', ref: 'school:taego-order' },
+  { id: 'tl-kr-providence', year: 1972, region: 'korea', th: 'ซึงซานย้ายไปสหรัฐอเมริกา ตั้งศูนย์เซนพรอวิเดนซ์ รัฐโรดไอแลนด์', ref: 'person:seung-sahn' },
+  { id: 'tl-kr-seonmun-jeongno', year: 1981, region: 'korea', th: 'ซองชอลได้รับเลือกเป็นประมุขสงฆ์คณะโชเก และพิมพ์ 禪門正路 วิจารณ์หลัก 頓悟漸修 ของชินุล', ref: 'person:seongcheol' },
+  { id: 'tl-kr-kwan-um', year: 1983, region: 'korea', th: 'ศูนย์ของศิษย์ซึงซานรวมตัวเป็นสำนักควันอุม (Kwan Um School of Zen)', ref: 'school:kwan-um' },
+);

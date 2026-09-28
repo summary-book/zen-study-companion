@@ -1,0 +1,49 @@
+# Build the single-file app, run the node tests, and publish dist/index.html to GitHub Pages.
+# Repo settings → Pages → Source: "GitHub Actions".
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Builds dist/ and runs the data, unit and view tests. The SAT passages (正法眼藏) are
+      # checked only where tools/raw-private/ exists; it is git-ignored, so CI skips that check.
+      - run: npm test
+      - name: Collect the site
+        run: |
+          mkdir -p _site
+          cp dist/index.html dist/zen-study.html _site/
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

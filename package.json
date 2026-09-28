@@ -1,0 +1,25 @@
+{
+  "name": "zen-study-companion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Zen Study Companion — single-file offline study webapp for Chan/Zen/Seon/Thiền",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node build.mjs && node --test tests/data/*.test.mjs tests/unit/*.test.mjs tests/views/*.test.mjs",
+    "e2e": "playwright test --config playwright.config.mjs",
+    "verify": "npm test && npm run e2e",
+    "fetch:cbeta": "node tools/fetch-cbeta.mjs",
+    "report": "node tools/verify-report.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/cli": "^4.3.3",
+    "jsdom": "^30.1.1",
+    "pinyin-pro": "^3.29.4",
+    "subset-font": "^2.9.0",
+    "tailwindcss": "^4.3.3",
+    "tiny-inflate": "^1.0.3"
+  }
+}

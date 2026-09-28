@@ -1,0 +1,95 @@
+// India: the Buddha, the 28 Indian patriarchs of the Zen tradition, and figures in Indian sūtras.
+// Historicity: the list of 28 is a Chinese construction (settled c. 801 in 寶林傳, canonised in 景德傳燈錄 1004).
+ZEN_DATA.people.push(
+  {
+    id: 'shakyamuni', country: 'india', schools: ['india'], historicity: 'historical',
+    names: { zh: '釋迦牟尼佛', zhS: '释迦牟尼佛', pinyin: 'Shìjiāmóuní Fó', th: 'พระศากยมุนีพุทธเจ้า', thCommon: ['พระพุทธเจ้า', 'พระสมณโคดม'], ja: '釈迦牟尼仏', romaji: 'Shakamuni Butsu', sa: 'Śākyamuni', pali: 'Sakyamuni' },
+    dates: { b: -480, d: -400, approx: true, note: 'ช่วงที่นักวิชาการปัจจุบันจำนวนมากประมาณ ขนบเถรวาทไทยนับปีปรินิพพานต่างออกไป (543 ปีก่อน ค.ศ.)' },
+    summary: 'พระพุทธเจ้า ผู้เป็นต้นธารของทุกสายในพุทธศาสนา ในสายสืบทอดของเซน ถือเป็นรากที่ส่งมอบ "ธรรมจักษุ" แก่พระมหากัสสปะ',
+    bio: [
+      'ในขนบเซน ความสำคัญของพระศากยมุนีไม่ได้อยู่ที่ชีวประวัติเท่านั้น แต่อยู่ที่ฐานะผู้ "ถ่ายทอดจิตสู่จิต" (以心傳心) เป็นองค์แรก เรื่องที่อ้างบ่อยที่สุดคือ **การชูดอกไม้ที่ภูเขาคิชฌกูฏ** (拈花微笑): พระองค์ทรงชูดอกไม้ต่อหน้าที่ประชุม มีเพียงพระมหากัสสปะที่ยิ้ม พระองค์จึงตรัสว่ามี "คลังแห่งธรรมจักษุอันถูกต้อง" (正法眼藏) ซึ่งไม่ตั้งอยู่บนตัวอักษร และมอบแก่มหากัสสปะ',
+      { note: 'เรื่องชูดอกไม้ไม่พบในพระไตรปิฎกบาลีหรือพระสูตรอินเดียรุ่นเก่า ปรากฏในเอกสารจีนสมัยซ่ง (เช่น 天聖廣燈錄 ค.ศ. 1036) และกลายเป็นกรณีที่ 6 ของ 無門關 ในภายหลัง — เป็นตำนานก่อตั้งของเซน ไม่ใช่บันทึกประวัติศาสตร์' },
+      'สำหรับการเทียบกับพระพุทธประวัติฝ่ายบาลี ดู view [[theravada:transmission|เทียบเถรวาท: การสืบทอดธรรม]]',
+    ],
+    refs: ['T2076', 'dumoulin-history'],
+  },
+  {
+    id: 'mahakasyapa', country: 'india', schools: ['india'], historicity: 'historical', patriarch: { india: 1 },
+    names: { zh: '摩訶迦葉', zhS: '摩诃迦叶', pinyin: 'Móhē Jiāyè', th: 'พระมหากัสสปะ', ja: '摩訶迦葉', romaji: 'Makakashō', sa: 'Mahākāśyapa', pali: 'Mahākassapa' },
+    dates: { note: 'ศตวรรษที่ 5 ก่อน ค.ศ. (ร่วมสมัยพระพุทธเจ้า)' },
+    summary: 'พระอัครสาวกผู้เลิศทางธุดงค์ ประธานสังคายนาครั้งแรก ในขนบเซนเป็นสังฆปริณายกองค์ที่ 1 ผู้รับธรรมด้วยรอยยิ้ม',
+    bio: [
+      'พระมหากัสสปะเป็นบุคคลในพระไตรปิฎกบาลีที่มีตัวตนชัดเจน ในฝ่ายเถรวาทท่านได้รับยกย่องเป็นเอตทัคคะด้านถือธุดงค์ และเป็นประธานปฐมสังคายนาหลังพุทธปรินิพพาน',
+      'ในขนบเซน ท่านเป็น **สังฆปริณายกองค์แรก** ผู้รับการถ่ายทอดจิตจากพระพุทธเจ้าผ่านเหตุการณ์ชูดอกไม้ ([[person:shakyamuni]]) และส่งต่อแก่พระอานนท์ โดยมีเรื่องเล่าว่าท่านบอกพระอานนท์ให้ "ล้มเสาธงหน้าประตู" (倒却門前剎竿著) ซึ่งเป็นกรณีที่ 22 ของ 無門關',
+    ],
+    refs: ['T2076'],
+  },
+  {
+    id: 'ananda', country: 'india', schools: ['india'], historicity: 'historical', patriarch: { india: 2 },
+    names: { zh: '阿難', zhS: '阿难', pinyin: 'Ānán', th: 'พระอานนท์', ja: '阿難', romaji: 'Anan', sa: 'Ānanda', pali: 'Ānanda' },
+    dates: { note: 'ศตวรรษที่ 5 ก่อน ค.ศ.' },
+    summary: 'พุทธอุปัฏฐาก ผู้ทรงจำพระสูตร ในขนบเซนเป็นสังฆปริณายกองค์ที่ 2 ผู้รับธรรมจากพระมหากัสสปะ',
+    bio: [
+      'พระอานนท์เป็นผู้ได้ฟังพระธรรมเทศนามากที่สุด ในฝ่ายบาลีท่านเป็นผู้สาธยายพระสูตรในปฐมสังคายนา',
+      'ขนบเซนเล่าว่า แม้ได้ฟังมาก ท่านยังไม่รู้แจ้งจนกระทั่งพระมหากัสสปะเรียกชื่อและสั่งให้ล้มเสาธง — ใช้เป็นภาพสะท้อนว่า ความรู้จากการฟัง (多聞) ต่างจากการเห็นแจ้งด้วยตน',
+    ],
+    refs: ['T2076'],
+  },
+  { id: 'sanakavasin', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 3 }, names: { zh: '商那和修', pinyin: 'Shāngnà Héxiū', th: 'ศาณกวาสิน', ja: '商那和修', romaji: 'Shōnawashu', sa: 'Śāṇakavāsin' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 3 ตามขนบ ศิษย์พระอานนท์ คัมภีร์สันสกฤตบางฉบับกล่าวถึงท่านในสมัยก่อนพระเจ้าอโศก' },
+  { id: 'upagupta', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 4 }, names: { zh: '優波毱多', pinyin: 'Yōubō Júduō', th: 'อุปคุปต์', ja: '優婆毱多', romaji: 'Ubakikuta', sa: 'Upagupta' }, dates: { note: 'ราวศตวรรษที่ 3 ก่อน ค.ศ. (ตามคัมภีร์อโศกาวทาน)' }, summary: 'สังฆปริณายกองค์ที่ 4 ตามขนบ ในคัมภีร์สันสกฤตเป็นพระอาจารย์ของพระเจ้าอโศก ในไทยรู้จักในชื่อ "พระอุปคุต"' },
+  { id: 'dhrtaka', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 5 }, names: { zh: '提多迦', pinyin: 'Tíduōjiā', th: 'ธฤตกะ', ja: '提多迦', romaji: 'Daitaka', sa: 'Dhṛtaka' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 5 ตามขนบ' },
+  { id: 'miccaka', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 6 }, names: { zh: '彌遮迦', pinyin: 'Mízhējiā', th: 'มิจฉกะ', ja: '弥遮迦', romaji: 'Mishaka', sa: 'Miccaka' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 6 ตามขนบ' },
+  { id: 'vasumitra', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 7 }, names: { zh: '婆須蜜', pinyin: 'Póxūmì', th: 'วสุมิตร', ja: '婆須蜜', romaji: 'Bashumitsu', sa: 'Vasumitra' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 7 ตามขนบ (ชื่อซ้ำกับนักปราชญ์สำนักสรวาสติวาทหลายท่าน การระบุตัวตนไม่แน่ชัด)' },
+  { id: 'buddhanandi', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 8 }, names: { zh: '佛陀難提', pinyin: 'Fótuó Nántí', th: 'พุทธนันทิ', ja: '仏陀難提', romaji: 'Buddanandai', sa: 'Buddhanandi' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 8 ตามขนบ' },
+  { id: 'buddhamitra', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 9 }, names: { zh: '伏馱蜜多', pinyin: 'Fútuó Mìduō', th: 'พุทธมิตร', ja: '伏駄蜜多', romaji: 'Fudamitta', sa: 'Buddhamitra' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 9 ตามขนบ' },
+  { id: 'parsva', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 10 }, names: { zh: '脇尊者', pinyin: 'Xié Zūnzhě', th: 'ปารศวะ', ja: '脇尊者', romaji: 'Kyō Sonja', sa: 'Pārśva' }, dates: { note: 'ราวศตวรรษที่ 1–2 (ถ้าเป็นบุคคลเดียวกับปารศวะในสมัยพระเจ้ากนิษกะ)' }, summary: 'สังฆปริณายกองค์ที่ 10 ตามขนบ ชื่อจีน "ผู้ทรงเกียรติแห่งสีข้าง" มาจากเรื่องเล่าว่าท่านไม่เคยเอนสีข้างลงนอน' },
+  { id: 'punyayasas', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 11 }, names: { zh: '富那夜奢', pinyin: 'Fùnàyèshē', th: 'ปุณยยศัส', ja: '富那夜奢', romaji: 'Funayasha', sa: 'Puṇyayaśas' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 11 ตามขนบ' },
+  { id: 'asvaghosa', country: 'india', schools: ['india'], historicity: 'disputed', patriarch: { india: 12 }, names: { zh: '馬鳴', zhS: '马鸣', pinyin: 'Mǎmíng', th: 'อัศวโฆษ', ja: '馬鳴', romaji: 'Memyō', sa: 'Aśvaghoṣa' }, dates: { b: 80, d: 150, approx: true }, summary: 'สังฆปริณายกองค์ที่ 12 ตามขนบ มักระบุว่าเป็นกวีผู้แต่งพุทธจริต (Buddhacarita) คัมภีร์ "มหายานศรัทโธตปาทศาสตร์" (大乘起信論) ที่อ้างว่าท่านแต่ง นักวิชาการส่วนใหญ่เห็นว่าแต่งขึ้นในจีน' },
+  { id: 'kapimala', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 13 }, names: { zh: '迦毘摩羅', pinyin: 'Jiāpímóluó', th: 'กปิมละ', ja: '迦毘摩羅', romaji: 'Kabimora', sa: 'Kapimala' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 13 ตามขนบ' },
+  {
+    id: 'nagarjuna', country: 'india', schools: ['india'], historicity: 'disputed', patriarch: { india: 14 },
+    names: { zh: '龍樹', zhS: '龙树', pinyin: 'Lóngshù', th: 'นาคารชุน', ja: '龍樹', romaji: 'Ryūju', sa: 'Nāgārjuna' },
+    dates: { b: 150, d: 250, approx: true },
+    summary: 'นักปราชญ์ผู้วางรากฐานสายมาธยมิกะ (ทางสายกลาง) และปรัชญาศูนยตา ในขนบเซนเป็นสังฆปริณายกองค์ที่ 14',
+    bio: [
+      'นาคารชุนเป็นนักปราชญ์ที่สำคัญที่สุดคนหนึ่งของมหายาน ผู้แต่งมูลมัธยมกการิกา (中論) ซึ่งวิเคราะห์ว่าธรรมทั้งปวงว่างจากสภาวะในตัวเอง (สฺวภาว) เพราะเกิดขึ้นอาศัยกัน',
+      'แนวคิดนี้เป็นฉากหลังโดยตรงของ [[text:heart-sutra]] และของวาทะเซนที่ปฏิเสธการยึดทั้ง "มี" และ "ไม่มี" เช่นใน [[text:xinxinming]] การที่ขนบเซนนับท่านเข้าในสายสืบทอดจึงเป็นการประกาศรากทางปรัชญาของตน มากกว่าจะเป็นบันทึกศิษย์–อาจารย์จริง',
+    ],
+    refs: ['T2076', 'dumoulin-history'],
+  },
+  { id: 'kanadeva', country: 'india', schools: ['india'], historicity: 'disputed', patriarch: { india: 15 }, names: { zh: '迦那提婆', pinyin: 'Jiānà Típó', th: 'กาณเทวะ', thCommon: ['อารยเทวะ'], ja: '迦那提婆', romaji: 'Kanadaiba', sa: 'Kāṇadeva (Āryadeva)' }, dates: { note: 'ราวศตวรรษที่ 3' }, summary: 'สังฆปริณายกองค์ที่ 15 ตามขนบ ระบุว่าเป็นอารยเทวะ ศิษย์นาคารชุน ผู้แต่งจตุศตกะ' },
+  { id: 'rahulata', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 16 }, names: { zh: '羅睺羅多', pinyin: 'Luóhóuluóduō', th: 'ราหุลตะ', ja: '羅睺羅多', romaji: 'Ragorata', sa: 'Rāhulata' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 16 ตามขนบ' },
+  { id: 'sanghanandi', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 17 }, names: { zh: '僧伽難提', pinyin: 'Sēngqié Nántí', th: 'สังฆนันทิ', ja: '僧伽難提', romaji: 'Sōgyanandai', sa: 'Saṅghanandi' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 17 ตามขนบ' },
+  { id: 'gayasata', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 18 }, names: { zh: '伽耶舍多', pinyin: 'Qiéyéshèduō', th: 'คยาศตะ', ja: '伽耶舎多', romaji: 'Gayashata', sa: 'Gayaśata' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 18 ตามขนบ' },
+  { id: 'kumarata', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 19 }, names: { zh: '鳩摩羅多', pinyin: 'Jiūmóluóduō', th: 'กุมารตะ', ja: '鳩摩羅多', romaji: 'Kumorata', sa: 'Kumārata' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 19 ตามขนบ' },
+  { id: 'jayata', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 20 }, names: { zh: '闍夜多', pinyin: 'Shéyèduō', th: 'ชยตะ', ja: '闍夜多', romaji: 'Shayata', sa: 'Jayata' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 20 ตามขนบ' },
+  { id: 'vasubandhu', country: 'india', schools: ['india'], historicity: 'disputed', patriarch: { india: 21 }, names: { zh: '婆修盤頭', pinyin: 'Póxiū Pántóu', th: 'วสุพันธุ', ja: '婆修盤頭', romaji: 'Bashubanzu', sa: 'Vasubandhu' }, dates: { note: 'ราวศตวรรษที่ 4–5 ถ้าเป็นบุคคลเดียวกับปราชญ์โยคาจาร' }, summary: 'สังฆปริณายกองค์ที่ 21 ตามขนบ ชื่อตรงกับวสุพันธุ ปราชญ์ผู้แต่งอภิธรรมโกศะและตำราโยคาจาร แต่การระบุว่าเป็นบุคคลเดียวกันยังเป็นข้อถกเถียง' },
+  { id: 'manorhita', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 22 }, names: { zh: '摩拏羅', pinyin: 'Mónáluó', th: 'มโนรหิต', ja: '摩拏羅', romaji: 'Manura', sa: 'Manorhita' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 22 ตามขนบ' },
+  { id: 'haklena', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 23 }, names: { zh: '鶴勒那', pinyin: 'Hèlènà', th: 'หกเลนะ', ja: '鶴勒那', romaji: 'Kakurokuna', sa: 'Haklena' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 23 ตามขนบ' },
+  { id: 'simha', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 24 }, names: { zh: '師子比丘', pinyin: 'Shīzǐ Bǐqiū', th: 'สิงหะภิกษุ', ja: '師子尊者', romaji: 'Shishi Sonja', sa: 'Siṃha (Āryasiṃha)' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 24 ตามขนบ เรื่องเล่าว่าถูกกษัตริย์แคชเมียร์ประหาร ทำให้สายสืบทอดขาดตอน — ข้อนี้ทำให้สายเทียนไถในจีนเห็นว่าการสืบทอดสิ้นสุดที่ท่าน ขณะที่ฝ่ายเซนแต่งรายชื่อต่อจนครบ 28' },
+  { id: 'vasasita', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 25 }, names: { zh: '婆舍斯多', pinyin: 'Póshěsīduō', th: 'วาศสิตะ', ja: '婆舎斯多', romaji: 'Bashashita', sa: 'Vāśasita' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 25 ตามขนบ' },
+  { id: 'punyamitra', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 26 }, names: { zh: '不如蜜多', pinyin: 'Bùrú Mìduō', th: 'ปุณยมิตร', ja: '不如蜜多', romaji: 'Funyomitta', sa: 'Puṇyamitra' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 26 ตามขนบ' },
+  { id: 'prajnatara', country: 'india', schools: ['india'], historicity: 'traditional', patriarch: { india: 27 }, names: { zh: '般若多羅', pinyin: 'Bōrě Duōluó', th: 'ปรัชญาตาระ', ja: '般若多羅', romaji: 'Hannyatara', sa: 'Prajñātāra' }, dates: {}, summary: 'สังฆปริณายกองค์ที่ 27 ตามขนบ อาจารย์ของโพธิธรรม ผู้ทำนายว่าธรรมจะเจริญในแผ่นดินจีน' },
+
+  // Figures in Indian sūtras (not in the lineage)
+  {
+    id: 'avalokitesvara', country: 'india', schools: [], historicity: 'traditional',
+    names: { zh: '觀自在菩薩', zhS: '观自在菩萨', pinyin: 'Guānzìzài Púsà', th: 'พระอวโลกิเตศวรโพธิสัตว์', thCommon: ['เจ้าแม่กวนอิม', 'กวนอิม'], ja: '観自在菩薩', romaji: 'Kanjizai Bosatsu', sa: 'Avalokiteśvara' },
+    dates: {},
+    summary: 'พระโพธิสัตว์แห่งกรุณา ผู้แสดงธรรมใน [[text:heart-sutra]] เสวียนจั้งแปลชื่อว่า 觀自在 ("ผู้เห็นอย่างอิสระ") ต่างจากฉบับกุมารชีพที่ใช้ 觀世音 ("ผู้พิจารณาเสียงของโลก")',
+    bio: [
+      'ในหฤทัยสูตร พระอวโลกิเตศวรเป็นผู้ "ปฏิบัติปรัชญาปารมิตาอันลึกซึ้ง" แล้วเห็นว่าขันธ์ทั้งห้าว่าง จากนั้นอธิบายแก่พระสารีบุตร — เป็นการวางให้พระโพธิสัตว์ (ตัวแทนปัญญามหายาน) สอนพระสาวก (ตัวแทนอภิธรรม) อย่างจงใจ',
+      'ในวัฒนธรรมจีน–ไทย รู้จักในรูปเจ้าแม่กวนอิม ซึ่งเป็นพัฒนาการทางศาสนาที่ต่างออกไปจากบทบาทในพระสูตร',
+    ],
+  },
+  {
+    id: 'sariputra', country: 'india', schools: [], historicity: 'historical',
+    names: { zh: '舍利子', zhS: '舍利子', pinyin: 'Shèlìzǐ', th: 'พระสารีบุตร', ja: '舎利子', romaji: 'Sharishi', sa: 'Śāriputra', pali: 'Sāriputta' },
+    dates: { note: 'ศตวรรษที่ 5 ก่อน ค.ศ.' },
+    summary: 'พระอัครสาวกผู้เลิศทางปัญญา ในหฤทัยสูตรเป็นผู้ฟังคำสอนเรื่องศูนยตาจากพระอวโลกิเตศวร',
+    bio: [
+      'ในพระไตรปิฎกบาลี พระสารีบุตรเป็นเอตทัคคะด้านปัญญา และขนบอภิธรรมถือว่าท่านเป็นผู้สืบทอดการจำแนกธรรม',
+      'การที่หฤทัยสูตรให้ท่านเป็น "ผู้ถูกสอน" จึงมีนัยเชิงวิวาทะ: คำสอนเรื่องขันธ์ อายตนะ ธาตุ และอริยสัจ ซึ่งเป็นแก่นของอภิธรรม ถูกนำมาแสดงว่า "ว่าง" ทีละหมวด ดูการเทียบใน [[theravada:emptiness|เทียบเถรวาท: ความว่าง]]',
+    ],
+  },
+);
