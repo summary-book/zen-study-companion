@@ -278,6 +278,9 @@
   .passage { padding: 0.8rem 1rem; border-radius: 12px; background: var(--glass-strong); border: 1px solid var(--line); border-left: 4px solid var(--orange-l); scroll-margin-top: calc(var(--topbar-h) + 3rem); }
   .passage.layer-commentary { border-left-color: #8B5CF6; }
   .passage.tts-active { box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.45); }
+  /* read-aloud: phrase being spoken / current word (CSS Custom Highlight API) */
+  ::highlight(tts-phrase) { background-color: rgba(249, 115, 22, 0.22); }
+  ::highlight(tts-word) { background-color: #F97316; color: #fff; }
   .passage-meta { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.35rem; }
   .layer-zh { font-size: 1.28rem; line-height: 1.9; color: var(--text); letter-spacing: 0.04em; }
   .layer-pinyin { font-size: 0.9rem; color: var(--ink-orange); margin-top: 0.15rem; }

@@ -228,3 +228,29 @@ test('read-aloud speaks the chosen language at the chosen rate', async () => {
   assert.equal(b2.querySelector('.btn-primary').disabled, true);
   assert.match(b2.querySelector('.tts-msg').textContent, /ไม่พบเสียง/);
 });
+
+test('read-aloud marks the phrase being spoken and the current word', async () => {
+  const app = await loadApp();
+  const { Z, window } = app;
+  // CSS Custom Highlight API mock (jsdom has none)
+  window.Highlight = function (range) { this.range = range; };
+  window.CSS.highlights = new Map();
+  // a speech mock that reports one word boundary and then waits
+  let last = null;
+  window.speechSynthesis.speak = (u) => { last = u; };
+  const main = await app.go('#/texts/heart-sutra/c1');
+  const p = main.querySelector('.passage');
+  Z.tts.playPassage(p);
+  const zh = p.querySelector('.layer-zh').textContent;
+  const phrase = window.CSS.highlights.get('tts-phrase');
+  assert.ok(phrase, 'phrase highlight set');
+  assert.equal(phrase.range.toString(), last.text);
+  assert.ok(zh.includes(last.text));
+  assert.equal(window.CSS.highlights.has('tts-word'), false);
+  last.onboundary({ name: 'word', charIndex: 2, charLength: 2 });
+  assert.equal(window.CSS.highlights.get('tts-word').range.toString(), last.text.slice(2, 4));
+  last.onend(); // next phrase
+  assert.equal(window.CSS.highlights.get('tts-phrase').range.toString(), last.text);
+  Z.tts.stop();
+  assert.equal(window.CSS.highlights.size, 0);
+});

@@ -21,7 +21,7 @@
       const clone = el.cloneNode(true);
       clone.querySelectorAll('.th-tag, .title-zh').forEach((x) => x.remove());
       const target = el.closest('.passage') || el;
-      return { text: clone.textContent.trim(), lang: which, el: target };
+      return { text: clone.textContent.trim(), lang: which, el: target, node: el };
     }).filter((x) => x.text);
   }
 
